@@ -5,24 +5,24 @@ RECORD CHECK - my version
 
 Name  : ALVIN ANKUNDA
 Lane  : IT
+Date  :
 
 Run it: python template.py
 """
 
-hostname = input("Hostname: ")
-used_gb = float(input("GB used: "))
-total_gb = float(input("GB total: "))
+label = input("Enter label: ")
+first = float(input("Enter first number: "))
+second = float(input("Enter second number: "))
 
-difference = total_gb - used_gb
-percent = (used_gb / total_gb) * 100
-free_percent = (difference / total_gb) * 100
+difference = first - second
+percent = (first / second) * 100
 
+print()
 print("=" * 34)
-print(f"  RECORD CHECK - {hostname}")
+print(f" RECORD CHECK - {label}")
 print("=" * 34)
-print(f"Used      : {used_gb:>10.2f}")
-print(f"Total     : {total_gb:>10.2f}")
-print(f"Free      : {difference:>+10.2f}")
-print(f"Percent   : {percent:>10.2f} %")
-print(f"Free %    : {free_percent:>10.2f} %")
+print(f"First      : {first:>+10.2f}")
+print(f"Second     : {second:>+10.2f}")
+print(f"Difference : {difference:>+10.2f}")
+print(f"Percent    : {percent:>10.2f} %")
 print("=" * 34)
